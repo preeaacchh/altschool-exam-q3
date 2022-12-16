@@ -1,17 +1,10 @@
 {
   "hosting": {
-    "site": "alt-school-exam-q3",
-    "public": "dist",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }
