@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./index.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Dashboard from "./pages/Dashboard";
 import Email from "./pages/Email";
 import Phone from "./pages/Phone";
 import Error from "./pages/Error";
+import Dashboard from "./pages/Dashboard";
 import {
   BrowserRouter,
   NavLink,
@@ -33,28 +33,28 @@ function App() {
       <header>
         <h1>AltSchool Exam Question 3</h1>
       </header>
-      <nav>
+      <nav className="nav-bar">
         <NavLink
           to=""
-          className={({ isActive }) => isActive && activeClassname}
+          className={({ isActive }) => isActive && activeClassname} style={{ textDecoration: 'none' }}
         >
           Home
         </NavLink>
         <NavLink
           to="about"
-          className={({ isActive }) => isActive && activeClassname}
+          className={({ isActive }) => isActive && activeClassname} style={{ textDecoration: 'none' }}
         >
           About
         </NavLink>
         <NavLink
           to="contact"
-          className={({ isActive }) => isActive && activeClassname}
+          className={({ isActive }) => isActive && activeClassname} style={{ textDecoration: 'none' }}
         >
           Contact
         </NavLink>
         <NavLink
           to="dashboard"
-          className={({ isActive }) => isActive && activeClassname}
+          className={({ isActive }) => isActive && activeClassname} style={{ textDecoration: 'none' }}
         >
           Dashboard
         </NavLink>
